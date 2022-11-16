@@ -6,9 +6,9 @@ import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Service;
 
-@Service
+//@Service
 // 3. 애즈펙트 설정
-@Aspect
+//@Aspect
 public class BeforeAdvice {
 	// 1. 포인트컷 설정
 	/*
@@ -20,7 +20,7 @@ public class BeforeAdvice {
 	 */
 	
 	// 2. 어드바이스 설정
-	@Before("PointcutCommon.allPointcut()")
+	//@Before("PointcutCommon.allPointcut()")
 	public void beforeMethod(JoinPoint jp) {
 		String methodName = jp.getSignature().getName();
 		Object[] methodArgs = jp.getArgs();
